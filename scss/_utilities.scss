@@ -37,6 +37,15 @@
   margin: 1.5rem 0;
 }
 
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 // Backgrounds
 .bg {
   &-primary {
@@ -152,11 +161,14 @@
   }
 }
 
-.dark-overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+// Tables
+.table {
+  th,
+  td {
+    padding: 1rem;
+    text-align: left;
+  }
+  th {
+    background: $light-color;
+  }
 }
